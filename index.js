@@ -9,12 +9,13 @@ const pinataDir = `${process.env.PWD}/pinata/`;
 const testDir = `${process.env.PWD}/test/`;
 
 (async () => {
-	
-	// await build();
+	// Generte GIF files
+	await build();
 
-	// var duplicatedNumber = checkDuplicated()
-	// console.log(duplicatedNumber)
+	var duplicatedNumber = checkDuplicated()
+	console.log(duplicatedNumber)
 
+	// Create metadata for NFT from basis data
 	// let metadatas = generateMetadata();
 	
 	// fs.writeFileSync(
@@ -40,14 +41,14 @@ const testDir = `${process.env.PWD}/test/`;
 	// 	)
 	// }
 
-	for(let i=0; i<666; i++) {
-		let data = makeTestData(i)
+	// for(let i=0; i<666; i++) {
+	// 	let data = makeTestData(i)
 
-		fs.writeFileSync(
-			`${testDir}${i}.json`,
-			JSON.stringify(data, null, 2)
-		)
-	}
+	// 	fs.writeFileSync(
+	// 		`${testDir}${i}.json`,
+	// 		JSON.stringify(data, null, 2)
+	// 	)
+	// }
 
   // buildSetup();
   // await createFiles(edition);
