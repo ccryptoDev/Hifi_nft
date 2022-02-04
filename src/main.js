@@ -146,20 +146,6 @@ const makeApesData = (i) => {
   return item
 }
 
-const makeTestData = (i) => {
-  let item = {};
-
-  item.name = "name_" + i;
-  item.description = "description_" + i;
-  item.image = "https://ipfs.io/ipfs/Qma3rj6d8MV94ifHYtxxAdESUU5aHH4YCnhVmhjyHqBYXM";
-  item.webm_url = "ipfs://image.webm";
-  item.attributes = {
-    "id": i 
-  }
-
-  return item
-}
-
 // const makeApesData = (i) => {
 //   let item = {};
 
@@ -457,6 +443,5 @@ module.exports = {
   getBgNames,
   makeApesData,
   arrageRandData,
-  checkDuplicatedRand,
-  makeTestData
+  checkDuplicatedRand
 };

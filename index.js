@@ -1,5 +1,5 @@
 const myArgs = process.argv.slice(2);
-const { buildSetup, createFiles, createMetaData, pinFileToIPFS, uploadImages, build, checkDuplicated, getBgNames, makeApesData, arrageRandData, checkDuplicatedRand, makeTestData } = require("./src/main.js");
+const { buildSetup, createFiles, createMetaData, pinFileToIPFS, uploadImages, build, checkDuplicated, getBgNames, makeApesData, arrageRandData, checkDuplicatedRand } = require("./src/main.js");
 const { generateMetadata } = require('./src/generate.js');
 const { defaultEdition } = require("./src/config.js");
 const edition = myArgs.length > 0 ? Number(myArgs[0]) : defaultEdition;
@@ -38,15 +38,6 @@ const testDir = `${process.env.PWD}/test/`;
 	// 	fs.writeFileSync(
 	// 		`${pinataDir}${apesData.randNum}`,
 	// 		JSON.stringify(apesData, null, 2)
-	// 	)
-	// }
-
-	// for(let i=0; i<666; i++) {
-	// 	let data = makeTestData(i)
-
-	// 	fs.writeFileSync(
-	// 		`${testDir}${i}.json`,
-	// 		JSON.stringify(data, null, 2)
 	// 	)
 	// }
 
